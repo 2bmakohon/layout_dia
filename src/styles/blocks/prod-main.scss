@@ -1,0 +1,19 @@
+@import './prod-main-items/about-us';
+@import './prod-main-items/section.titles';
+@import './prod-main-items/product';
+@import './prod-main-items/our-expertise';
+@import './prod-main-items/services';
+@import './prod-main-items/testimonials';
+
+.main {
+  &__content {
+    display: grid;
+    row-gap: 120px;
+    padding-block: 120px;
+
+    @include on-tablet {
+      padding-block: 148px;
+      row-gap: 148px;
+    }
+  }
+}

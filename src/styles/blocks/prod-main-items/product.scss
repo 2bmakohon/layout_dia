@@ -1,0 +1,50 @@
+.product,
+.human {
+  overflow: hidden;
+  &__photo {
+    grid-column: 1 / -1;
+    padding-bottom: 32px;
+
+    @include hover(transform, scale(1.1));
+  }
+
+  &__title {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    color: #253757;
+
+    padding-bottom: 16px;
+  }
+
+  &__about {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    color: #6c788b;
+  }
+
+  &__coma {
+    padding-bottom: 8px;
+  }
+
+  &__name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    color: #253757;
+    padding-top: 16px;
+    padding-bottom: 4px;
+  }
+
+  &__who {
+    padding: 0;
+    text-align: center;
+  }
+}

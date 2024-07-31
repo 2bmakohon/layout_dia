@@ -1,0 +1,90 @@
+.services {
+  &__about {
+    @include page-grid;
+
+    padding-bottom: 48px;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+
+    padding-bottom: 24px;
+  }
+
+  &__text {
+    grid-column: 1 / -1;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #6c788b;
+  }
+
+  &__cards {
+    @include page-grid;
+
+    grid-gap: 24px;
+  }
+
+  &__card {
+    width: 280px;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 9px 18px 0 #25293108;
+    padding: 32px 0 32px 32px;
+
+    &--number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+      height: 24px;
+      width: 46px;
+      border-radius: 23px;
+      text-decoration: none;
+
+      background-color: $c-gray;
+      font-family: Poppins, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 19.5px;
+      color: #2060f6;
+    }
+
+    &--text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 19.5px;
+      text-align: left;
+      color: #6c788b;
+
+      padding-bottom: 32px;
+    }
+
+    &--button {
+      height: 40px;
+      width: 143px;
+
+      font-family: Poppins, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 22.5px;
+      color: #334563;
+      text-decoration: none;
+
+      text-align: center;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      background-image: url(/src/images/slider/arrow-for-card.png);
+      background-size: 40px 40px;
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -1,7 +1,19 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import './blocks/header';
+@import './blocks/prod-main';
 
-body {
+.page {
+  margin: 0;
   background: $c-gray;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
